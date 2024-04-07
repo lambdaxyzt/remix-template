@@ -5,23 +5,36 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "remix dev"
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@remix-run/node": "^2.4.1",
-    "@remix-run/react": "^2.4.1",
-    "@remix-run/serve": "^2.4.1",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
+    "autoprefixer": "^10.4.19",
+    "cacache": "^18.0.2",
+    "dotenv": "^16.4.5",
     "isbot": "3",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remix-flat-routes": "^0.6.4",
+    "sharp": "^0.33.3",
     "tailwind-variants": "^0.1.20"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.4.1",
-    "tailwindcss": "^3.4.1"
+    "@mdx-js/rollup": "^3.0.1",
+    "@remix-run/dev": "^2.8.1",
+    "@types/react-dom": "^18.2.24",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^4.0.0",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.8"
   }
 }

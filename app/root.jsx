@@ -4,11 +4,8 @@ import {
     Outlet,
     Scripts,
 } from "@remix-run/react";
-import stylesheet from "./tailwind.css";
+import "./tailwind.css";
 
-export const links = () => [
-    { rel: "stylesheet", href: stylesheet },
-];
 export default function App() {
     return (
         <html>
@@ -23,7 +20,6 @@ export default function App() {
         <body>
         <Outlet />
         <Scripts />
-        <LiveReload/>
         </body>
         </html>
     );
