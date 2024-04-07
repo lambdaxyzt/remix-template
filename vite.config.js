@@ -1,9 +1,10 @@
 import mdx from "@mdx-js/rollup";
-import { vitePlugin as remix } from "@remix-run/dev";
-import remarkFrontmatter from "remark-frontmatter";
-import remarkMdxFrontmatter from "remark-mdx-frontmatter";
-import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from "vite"
+import { flatRoutes } from 'remix-flat-routes'
+import remarkFrontmatter from "remark-frontmatter";
+import { vitePlugin as remix } from "@remix-run/dev";
+import { visualizer } from "rollup-plugin-visualizer";
+import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 
 export default defineConfig({
     server: {
@@ -21,7 +22,12 @@ export default defineConfig({
                 remarkMdxFrontmatter,
             ],
         }),
-        remix(),
+        remix({
+            ignoredRouteFiles: ['**/*'],
+            routes: async defineRoutes => {
+                return flatRoutes('routes', defineRoutes)
+            },
+        }),
         visualizer({ emitFile: true }),
     ],
 });
