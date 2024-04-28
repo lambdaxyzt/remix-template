@@ -7,7 +7,7 @@ import {pipeline} from "node:stream/promises"
 export const widths = [640, 828, 1080, 1920];
 export const defaultQuality = 75;
 
-export const image_server = "http://localhost:9000/gamma-user"
+export const image_server = `http://${process.env.IMAGE_SERVER}/gamma-user`
 export const cachePathImage = path.resolve('./.cache/image')
 export const cachePathMainImage = cachePathImage
 
