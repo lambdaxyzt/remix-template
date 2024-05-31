@@ -4,11 +4,12 @@ import {
     Outlet,
     Scripts,
     ScrollRestoration,
+    useLoaderData,
+    useRouteError
 } from "@remix-run/react";
-
+import {json} from "@remix-run/node"
 
 export const loader = async ({request}) => {
-    const session = await getSession(request.headers.get("cookie"));
     return json({
             ENV: {
                 MODE: process.env.NODE_ENV,
@@ -17,7 +18,7 @@ export const loader = async ({request}) => {
     )
 }
 
-function Document({children}) {
+const Document = ({children})=> {
     return (
         <html>
         <head>
@@ -64,9 +65,4 @@ export function ErrorBoundary() {
             </div>
         </Document>
     );
-}
-
-
-export default function App() {
-    return <Outlet/>;
 }
