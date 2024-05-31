@@ -14,9 +14,13 @@
     "@remix-run/node": "^2.9.2",
     "@remix-run/react": "^2.9.2",
     "@remix-run/serve": "^2.9.2",
+    "cacache": "^18.0.3",
     "isbot": "^4.1.0",
+    "node-fetch": "^3.3.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remix-flat-routes": "^0.6.5",
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.9.2",
