@@ -20,6 +20,9 @@ importers:
       cacache:
         specifier: ^18.0.3
         version: 18.0.3
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       isbot:
         specifier: ^4.1.0
         version: 4.4.0

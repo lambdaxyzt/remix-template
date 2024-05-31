@@ -1,3 +1,4 @@
+import "../env/init.js"
 import { PassThrough } from "node:stream";
 
 import { createReadableStreamFromReadable } from "@remix-run/node";
