@@ -1,7 +1,13 @@
 {
-    "baseUrl": ".",
-    "paths": {
-        "app/*": ["./app/*"],
-        "root/*": ["./*"]
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "app/*": [
+                "./app/*"
+            ],
+            "root/*": [
+                "./*"
+            ]
+        }
     }
 }
