@@ -1,10 +1,11 @@
 import {
-    Links, LiveReload,
+    Links,
+    LiveReload,
     Meta,
     Outlet,
     Scripts,
 } from "@remix-run/react";
-import "./tailwind.css";
+import "./global.css";
 
 export default function App() {
     return (

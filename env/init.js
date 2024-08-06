@@ -1,4 +1,5 @@
 import * as dotenv from "dotenv";
+
 dotenv.config({ path: "./env/config.env" });
 
 const RequiredEnv = [
