@@ -13,28 +13,28 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@remix-run/node": "^2.8.1",
-    "@remix-run/react": "^2.8.1",
-    "@remix-run/serve": "^2.8.1",
-    "cacache": "^18.0.2",
+    "@remix-run/node": "^2.11.1",
+    "@remix-run/react": "^2.11.1",
+    "@remix-run/serve": "^2.11.1",
+    "cacache": "^18.0.4",
     "dotenv": "^16.4.5",
     "isbot": "3",
     "node-fetch": "^3.3.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remix-flat-routes": "^0.6.4",
-    "sharp": "^0.33.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remix-flat-routes": "^0.6.5",
+    "sharp": "^0.33.4",
     "tailwind-variants": "^0.1.20"
   },
   "devDependencies": {
     "@mdx-js/rollup": "^3.0.1",
-    "@remix-run/dev": "^2.8.1",
-    "@types/react-dom": "^18.2.24",
+    "@remix-run/dev": "^2.11.1",
+    "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^4.0.0",
     "rollup-plugin-visualizer": "^5.12.0",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.2.8"
+    "tailwindcss": "^3.4.9",
+    "vite": "^5.4.0"
   }
 }
