@@ -4,22 +4,30 @@ import {
     Meta,
     Outlet,
     Scripts,
+    ScrollRestoration
 } from "@remix-run/react";
 import "./global.css";
+import { Toaster } from 'react-hot-toast';
 
 export default function App() {
     return (
-        <html>
+        <html lang="en">
         <head>
-            <link
-                rel="icon"
-                href="data:image/x-icon;base64,AA"
-            />
-            <Meta />
-            <Links />
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width,initial-scale=1" />
+            <title>Your App</title>
         </head>
         <body>
+        <Toaster  position="bottom-right"
+  toastOptions={{
+    style: {
+      background: '#333',
+      color: '#fff',
+    },
+  }}
+/>
         <Outlet />
+        <ScrollRestoration />
         <Scripts />
         </body>
         </html>

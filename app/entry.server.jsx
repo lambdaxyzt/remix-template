@@ -5,8 +5,16 @@ import { PassThrough } from "node:stream";
 import { createReadableStreamFromReadable } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { renderToPipeableStream } from "react-dom/server";
+import { MongoClient } from 'mongodb';
 
 const ABORT_DELAY = 5_000;
+
+const client = new MongoClient("mongodb://localhost:27017");
+await client.connect();
+
+export async function connectToDatabase() {
+  return client.db('lologs');
+}
 
 export default function handleRequest(
     request,
