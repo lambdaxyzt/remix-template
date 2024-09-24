@@ -9,7 +9,7 @@ import { MongoClient } from 'mongodb';
 
 const ABORT_DELAY = 5_000;
 
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient(process.env.MONGODB_URI);
 await client.connect();
 
 export async function connectToDatabase() {
